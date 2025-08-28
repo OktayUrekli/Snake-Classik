@@ -31,8 +31,8 @@ public class GridManager : MonoBehaviour
 
     Vector3 GetWordPosition(int x, int y)
     {
-        float newX = -xDim / 2f + x + 0.5f;
-        float newY = -yDim / 2f + y + 0.5f;
+        float newX = Mathf.Round(-xDim / 2f + x) ;
+        float newY = Mathf.Round(-yDim / 2f + y) ;
 
         return new Vector3(newX, newY, 0);
     }
